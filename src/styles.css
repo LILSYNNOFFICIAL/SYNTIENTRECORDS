@@ -191,3 +191,6 @@
  .artist-video-heading{align-items:flex-start;flex-direction:column}
  .featured-artist-image-wrap{aspect-ratio:4/3}
 }
+
+/* Tighten the lower edge of the Watch & Listen section. */
+.artist-video-section.section-pad{padding-bottom:48px}
