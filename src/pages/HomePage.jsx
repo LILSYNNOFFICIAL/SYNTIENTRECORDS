@@ -11,7 +11,7 @@ const featuredRelease = {
   artist: "LIL SYNN",
   format: "ALBUM",
   trackCount: "10 TRACKS",
-  artwork: "https://raw.githubusercontent.com/LILSYNNOFFICIAL/LILSYNNOFFICIAL/main/assets/images/icons/album_art/Echoes%20of%20Us.webp",
+  artwork: "https://raw.githubusercontent.com/LILSYNNOFFICIAL/LILSYNNOFFICIAL/refs/heads/main/assets/images/icons/album_art/Echoes%20of%20Us.jpg",
   description:
     "A ten-track release tracing connection, memory, distance, and the moments that stay with us. Explore the album and listen on your preferred platform.",
   tracks: ["Keep it Going", "Out of the Blue", "Eight Like Infinity", "Where I Belong", "Finding You"],
@@ -87,6 +87,70 @@ export default function HomePage() {
                 </div>
               </div>
             </article>
+          </Container>
+        </section>
+
+        <section id="featured-artists" className="featured-artists-section section-pad">
+          <Container maxW="7xl">
+            <div className="section-heading">
+              <div>
+                <div className="eyebrow">ARTIST SPOTLIGHT</div>
+                <Heading as="h2" className="section-title">FEATURED ARTISTS<span className="title-period">.</span></Heading>
+              </div>
+              <Text className="section-note">Meet the artists behind the releases.<br />Explore their worlds beyond the label.</Text>
+            </div>
+            <div className="featured-artist-grid">
+              <a className="featured-artist-card" href="https://lilsynn.com" target="_blank" rel="noreferrer">
+                <div className="featured-artist-image-wrap">
+                  <img src="https://raw.githubusercontent.com/LILSYNNOFFICIAL/SYNTIENTRECORDS/refs/heads/main/img/file_00000000b1f881f7b6298756986111bc.png" alt="LIL SYNN artist portrait" loading="lazy" />
+                  <span className="featured-artist-number">01 / FEATURED ARTIST</span>
+                </div>
+                <div className="featured-artist-info">
+                  <div><Heading as="h3">LIL SYNN</Heading><Text>CINEMATIC EMOTRAP · ALTERNATIVE POP</Text></div>
+                  <span className="featured-artist-link">OFFICIAL WEBSITE <ArrowUpRight size={15} /></span>
+                </div>
+              </a>
+              <a className="featured-artist-card" href="https://youtube.com/channel/UCmeovIW_Qs1pJpLuxIp1gUA?si=vORgaVge8bQHibAV" target="_blank" rel="noreferrer">
+                <div className="featured-artist-image-wrap">
+                  <img src="https://raw.githubusercontent.com/LILSYNNOFFICIAL/SYNTIENTRECORDS/refs/heads/main/img/file_00000000496c71fd97bfc91bbcedf550.png" alt="Ziggy and Chickenman artist artwork" loading="lazy" />
+                  <span className="featured-artist-number">02 / FEATURED ARTIST</span>
+                </div>
+                <div className="featured-artist-info">
+                  <div><Heading as="h3">ZIGGY AND CHICKENMAN</Heading><Text>PSYCHEDELIC DELTA BLUES ROCK</Text></div>
+                  <span className="featured-artist-link">YOUTUBE CHANNEL <ArrowUpRight size={15} /></span>
+                </div>
+              </a>
+            </div>
+          </Container>
+        </section>
+
+        <section className="artist-video-section section-pad">
+          <Container maxW="7xl">
+            <div className="section-heading">
+              <div>
+                <div className="eyebrow">OFFICIAL YOUTUBE RELEASES</div>
+                <Heading as="h2" className="section-title">WATCH & LISTEN<span className="title-period">.</span></Heading>
+              </div>
+              <Text className="section-note">Official releases only.<br />Watch directly from YouTube.</Text>
+            </div>
+            <div className="artist-video-grid">
+              <article className="artist-video-group">
+                <div className="artist-video-heading"><div><span>01 / LIL SYNN</span><h3>ECHOES OF US</h3></div><a href="https://www.youtube.com/watch?v=cPlMLCBGZTE&list=OLAK5uy_kb4u2aXV7biMk83i3KNPQXsGPh6zSG7vs" target="_blank" rel="noreferrer">VIEW ON YOUTUBE <ExternalLink size={13} /></a></div>
+                <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=OLAK5uy_kb4u2aXV7biMk83i3KNPQXsGPh6zSG7vs" title="LIL SYNN - Echoes of Us official YouTube album playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                <p className="artist-video-caption">The complete 10-track album playlist.</p>
+              </article>
+              <article className="artist-video-group">
+                <div className="artist-video-heading"><div><span>02 / ZIGGY AND CHICKENMAN</span><h3>COSMIC RAIN</h3></div><a href="https://youtube.com/channel/UCmeovIW_Qs1pJpLuxIp1gUA?si=vORgaVge8bQHibAV" target="_blank" rel="noreferrer">VIEW CHANNEL <ExternalLink size={13} /></a></div>
+                <div className="youtube-video-stack">
+                  <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/GiuSTJkdjTE" title="Ziggy and Chickenman - Cosmic Rain, official release" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                  <div className="youtube-video-meta"><strong>COSMIC RAIN</strong><span>OFFICIAL RELEASE · SYNTIENT RECORDS</span></div>
+                  <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/Q4yMHifa4AU" title="Ziggy and Chickenman - Midnight Mind Blow, official release" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                  <div className="youtube-video-meta"><strong>MIDNIGHT MIND BLOW</strong><span>FROM COSMIC RAIN · SYNTIENT RECORDS</span></div>
+                  <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/CJtatp5RUj4" title="Ziggy and Chickenman - Hold On To Nothin, official release" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                  <div className="youtube-video-meta"><strong>HOLD ON TO NOTHIN'</strong><span>FROM COSMIC RAIN · SYNTIENT RECORDS</span></div>
+                </div>
+              </article>
+            </div>
           </Container>
         </section>
 
