@@ -114,7 +114,7 @@ function updateMeta(selector, attribute, value, tagName) {
 export default function AboutPage() {
   useEffect(() => {
     document.title = "The Creative Ecosystem Behind Syntient Records | Synova Media";
-    updateMeta('meta[name="description"]', "content", "Independent music, original creative direction, artist development, visual production, marketing, and custom technology under one connected creative operation.", "meta");
+    updateMeta('meta[name="description"]', "content", "Discover the Synova Media creative ecosystem: Syntient Records artists, original songwriting by JP Gainer, AI-assisted music workflows, custom software from NeuroSyn Labs, visual design, animation, video, and marketing.", "meta");
     updateMeta('meta[property="og:title"]', "content", "The Creative Ecosystem Behind Syntient Records | Synova Media", "meta");
     updateMeta('meta[property="og:description"]', "content", "Independent artists, original creative direction, music releases, visual storytelling, marketing, and custom-built technology, connected under Synova Media.", "meta");
     updateMeta('link[rel="canonical"]', "href", "https://www.syntientrecords.com/About", "link");
@@ -143,7 +143,16 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="about-section">
+          <nav className="about-jump-nav" aria-label="About page sections">
+            <span className="about-jump-label">EXPLORE THE ECOSYSTEM</span>
+            <a href="#about-ecosystem">SYNOVA MEDIA</a>
+            <a href="#about-creator">JP GAINER</a>
+            <a href="#about-label">THE LABEL</a>
+            <a href="#about-technology">TECHNOLOGY</a>
+            <a href="#about-visuals">VISUALS + MARKETING</a>
+          </nav>
+
+          <section id="about-ecosystem" className="about-section">
             <div className="about-section-label">01 / THE LEAD ORCHESTRATOR</div>
             <div className="about-section-content">
               <div className="eyebrow">THE UMBRELLA / THE DIRECTION / THE CONNECTIONS</div>
@@ -154,8 +163,20 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="about-section">
-            <div className="about-section-label">02 / THE OPERATING STRUCTURE</div>
+<section id="about-creator" className="about-section">
+            <div className="about-section-label">02 / THE CREATIVE ARCHITECT</div>
+            <div className="about-section-content">
+              <div className="eyebrow">ORIGINAL WRITING / CREATIVE DIRECTION / SYSTEMS THINKING</div>
+              <Heading as="h2">JP Gainer.<br />The ideas, the words, and the tools.</Heading>
+              <Text className="about-copy">At the center of the operation is JP Gainer, whose work spans creative writing, music concepts, artist identities, technology, and the systems that connect them. He develops the ideas behind projects, writes and shapes creative material, builds the prompt structures that guide AI-assisted work, and designs the technical workflows used to turn those ideas into finished releases and media.</Text>
+              <Text className="about-copy">That combination matters. The same person shaping a song's emotional direction can also engineer a tool to solve a production problem, build a workflow to make a process repeatable, or develop a digital experience to present the finished work. The technology is not separate from the art. It is built around real creative needs and refined through actual use.</Text>
+              <Text className="about-copy">LIL SYNN is the project that receives the greatest share of JP's ongoing creative and technical work, and the clearest example of that full cycle: more than 60 released tracks, representing over four hours of music, supported by a growing catalog, videos, artwork, visual storytelling, and an expanding digital universe. The music is developed through AI-assisted creation and then shaped through a deliberate production process, including FL Studio, iZotope Ozone, and additional VST tools for mastering.</Text>
+              <Text className="about-copy">JP also builds the knowledge systems behind the workflow. The LIL SYNN Suno V6 guide is a substantial, continuously maintained creator reference covering prompt design, lyric and arrangement strategy, model behavior, editing, stems, production, testing, troubleshooting, and release preparation. It turns hard-won experimentation into repeatable knowledge that can improve the work across the roster.</Text>
+            </div>
+          </section>
+
+<section id="about-structure" className="about-section">
+            <div className="about-section-label">03 / THE OPERATING STRUCTURE</div>
             <div className="about-section-content">
               <Heading as="h2">Distinct disciplines.<br />One connected ecosystem.</Heading>
               <div className="division-grid">
@@ -191,8 +212,8 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="about-section">
-            <div className="about-section-label">03 / SYNTIENT RECORDS</div>
+<section id="about-label" className="about-section">
+            <div className="about-section-label">04 / SYNTIENT RECORDS</div>
             <div className="about-section-content">
               <div className="eyebrow">INDEPENDENT RECORD LABEL / ARTIST DEVELOPMENT</div>
               <Heading as="h2">Different sounds.<br />Individual identities.<br />A shared creative backbone.</Heading>
@@ -223,19 +244,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="about-section">
-            <div className="about-section-label">04 / THE CREATIVE ARCHITECT</div>
-            <div className="about-section-content">
-              <div className="eyebrow">ORIGINAL WRITING / CREATIVE DIRECTION / SYSTEMS THINKING</div>
-              <Heading as="h2">JP Gainer.<br />The ideas, the words, and the tools.</Heading>
-              <Text className="about-copy">At the center of the operation is JP Gainer, whose work spans creative writing, music concepts, artist identities, technology, and the systems that connect them. He develops the ideas behind projects, writes and shapes creative material, builds the prompt structures that guide AI-assisted work, and designs the technical workflows used to turn those ideas into finished releases and media.</Text>
-              <Text className="about-copy">That combination matters. The same person shaping a song's emotional direction can also engineer a tool to solve a production problem, build a workflow to make a process repeatable, or develop a digital experience to present the finished work. The technology is not separate from the art. It is built around real creative needs and refined through actual use.</Text>
-              <Text className="about-copy">LIL SYNN is the project that receives the greatest share of JP's ongoing creative and technical work, and the clearest example of that full cycle: more than 60 released tracks, representing over four hours of music, supported by a growing catalog, videos, artwork, visual storytelling, and an expanding digital universe. The music is developed through AI-assisted creation and then shaped through a deliberate production process, including FL Studio, iZotope Ozone, and additional VST tools for mastering.</Text>
-              <Text className="about-copy">JP also builds the knowledge systems behind the workflow. The LIL SYNN Suno V6 guide is a substantial, continuously maintained creator reference covering prompt design, lyric and arrangement strategy, model behavior, editing, stems, production, testing, troubleshooting, and release preparation. It turns hard-won experimentation into repeatable knowledge that can improve the work across the roster.</Text>
-            </div>
-          </section>
-
-          <section className="about-section">
+<section id="about-technology" className="about-section">
             <div className="about-section-label">05 / NEUROSYN LABS</div>
             <div className="about-section-content">
               <div className="eyebrow">SOFTWARE / AI / AUDIO / VIDEO / CREATIVE SYSTEMS</div>
@@ -271,7 +280,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="about-section">
+<section id="about-visuals" className="about-section">
             <div className="about-section-label">06 / VISUALS + MARKETING</div>
             <div className="about-section-content">
               <Heading as="h2">A project is more than its audio.</Heading>
@@ -280,7 +289,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="about-section recognition-section">
+<section id="about-recognition" className="about-section recognition-section">
             <div className="about-section-label">07 / RECOGNITION</div>
             <div className="about-section-content">
               <div className="eyebrow">SIQA / 2026</div>
@@ -288,6 +297,8 @@ export default function AboutPage() {
               <Text className="about-copy">LIL SYNN is SIQA verified. In 2026, the album <em>HELLO GOODBYE</em> was shortlisted for Album of the Year nomination consideration at the SIQA awards event in Los Angeles. It did not advance into the final five, but being shortlisted was a meaningful honor and an important milestone for the project and for the wider conversation around AI-assisted music.</Text>
             </div>
           </section>
+
+
 
           <section className="about-closing">
             <div className="eyebrow">SYNOVA MEDIA / SYNTIENT RECORDS</div>
