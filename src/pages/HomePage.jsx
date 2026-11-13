@@ -31,19 +31,27 @@ export default function HomePage() {
                 <div className="eyebrow">THE COLLECTIVE</div>
                 <Heading as="h2" className="section-title">THE ROSTER<span className="title-period">.</span></Heading>
               </div>
-              <Text className="section-note">Seven distinct identities.<br />One independent spirit.</Text>
+              <Text className="section-note">Eight distinct projects.<br />One independent spirit.</Text>
             </div>
             <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} gap={{ base: 3, md: 4 }}>
-              {roster.map((artist) => (
-                <a className="artist-card" key={artist.name} href={artist.href} target="_blank" rel="noreferrer">
-                  <div className="artist-card-top"><span>{artist.number} / 07</span><ArrowUpRight size={19} /></div>
-                  <div className="artist-card-bottom">
-                    <Heading as="h3">{artist.name}</Heading>
-                    <Text>{artist.descriptor}</Text>
-                  </div>
-                  <div className="card-glint" />
-                </a>
-              ))}
+              {roster.map((artist) => {
+                const card = (
+                  <>
+                    <div className="artist-card-top"><span>{artist.number} / 08</span><ArrowUpRight size={19} /></div>
+                    <div className="artist-card-bottom">
+                      <Heading as="h3">{artist.name}</Heading>
+                      <Text>{artist.descriptor}</Text>
+                      {artist.comingSoon && <span className="artist-card-pending">OFFICIAL LINK COMING SOON</span>}
+                    </div>
+                    <div className="card-glint" />
+                  </>
+                );
+                return artist.href ? (
+                  <a className="artist-card" key={artist.name} href={artist.href} target="_blank" rel="noreferrer">{card}</a>
+                ) : (
+                  <div className="artist-card artist-card-pending-shell" key={artist.name} aria-label={artist.name + ", official link coming soon"}>{card}</div>
+                );
+              })}
             </SimpleGrid>
           </Container>
         </section>
