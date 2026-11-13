@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import { Link as RouterLink } from "react-router-dom";
 import SiteHeader from "../components/SiteHeader.jsx";
