@@ -30,7 +30,7 @@ const technologyProjects = [
   {
     name: "RuRu AI",
     category: "VIDEO GENERATION SDK",
-    description: "An extended AI video-generation SDK that connects multiple generation providers through a developer-friendly workflow. Its documented enhancements include character-reference consistency, script-to-scene interpretation, model selection, cost previews, dialogue options, and long-form video assembly.",
+    description: "An extended AI video-generation SDK that connects multiple generation providers through a developer-friendly workflow. Its documented enhancements include character-reference consistency, script-to-scene interpretation, model selection, cost previews, dialogue options, and long-form video assembly for videos up to five minutes.",
     href: "https://github.com/LILSYNNOFFICIAL/RuRu-AI",
     label: "Explore RuRu AI"
   },
@@ -51,7 +51,7 @@ const technologyProjects = [
   {
     name: "SYNTHESIS",
     category: "DESKTOP ENGINEERING",
-    description: "A local-first desktop workspace for security and network workflows. It translates plain-language objectives into reviewable plans, uses registered tool adapters, validates targets, and keeps execution bounded by explicit authorization and safety controls.",
+    description: "A local-first desktop workspace for security and network workflows. It translates plain-language objectives into reviewable plans, uses 11 registered tool adapters, validates targets, and keeps execution bounded by explicit authorization and safety controls.",
     href: "https://github.com/LILSYNNOFFICIAL/SYNTHESIS",
     label: "Explore SYNTHESIS"
   },
@@ -65,7 +65,7 @@ const technologyProjects = [
   {
     name: "AI PDF Studio",
     category: "DOCUMENT ENGINEERING",
-    description: "An AI-assisted document and agreement authoring environment with a searchable template library, visual editing, natural-language document operations, reusable design themes, structured signature fields, quality review, and PDF export.",
+    description: "An AI-assisted document and agreement authoring environment with 101 editable templates, visual editing, natural-language document operations, reusable design themes, structured signature fields, quality review, and PDF export.",
     href: "https://github.com/LILSYNNOFFICIAL/AI-PDF-STUDIO",
     label: "Explore AI PDF Studio"
   },
