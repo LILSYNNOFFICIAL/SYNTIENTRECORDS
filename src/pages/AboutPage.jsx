@@ -6,8 +6,7 @@ import { roster } from "../data/roster.js";
 
 const projectDetails = [
   ["LIL SYNN", "A cinematic emotrap and alternative-pop project built around emotionally direct songwriting and atmospheric production."],
-  ["ZIGGY", "Part of the psychedelic delta blues group project shared with Chickenman."],
-  ["CHICKENMAN", "The other half of the psychedelic delta blues group project alongside Ziggy."],
+  ["Ziggy and Chickenman", "A psychedelic delta blues rock act, presented together as one group."],
   ["DIAMOND HEX", "A vocal-forward project pairing soaring vocals with sharp, precise rapping."],
   ["CHASING QUIET", "A project centered on lo-fi songs and understated atmosphere."],
   ["SYNSTATIC", "A project drawing on dubstep and mid-tempo influences, with albums that explore its electronic sound."],
@@ -33,7 +32,7 @@ export default function AboutPage() {
               <div className="project-list">
                 {projectDetails.map(([name, description], index) => (
                   <article className="project-row" key={name}>
-                    <div className="project-number">0{index + 1}</div>
+                    <div className="project-number">{String(index + 1).padStart(2, "0")}</div>
                     <div><Heading as="h3">{name}</Heading><Text>{description}</Text></div>
                     <a href={roster[index].href} target="_blank" rel="noreferrer" aria-label={`Visit ${name}`}><ArrowUpRight size={19} /></a>
                   </article>
