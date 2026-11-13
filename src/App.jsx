@@ -20,10 +20,11 @@ export default function App() {
       <ScrollToTopOnRouteChange />
       <Suspense fallback={<div className="route-loading">SYNTIENT RECORDS</div>}>
         <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/About" element={<AboutPage />} />
-        <Route path="*" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/About" element={<AboutPage />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
       </Suspense>
     </>
+  );
 }
