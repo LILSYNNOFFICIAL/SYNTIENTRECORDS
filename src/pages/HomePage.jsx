@@ -101,7 +101,7 @@ export default function HomePage() {
             </div>
             <div className="featured-artist-grid">
               <a className="featured-artist-card" href="https://lilsynn.com" target="_blank" rel="noreferrer">
-                <div className="featured-artist-image-wrap">
+                <div className="featured-artist-image-wrap featured-artist-image-wrap-lil-synn">
                   <img src="https://raw.githubusercontent.com/LILSYNNOFFICIAL/SYNTIENTRECORDS/refs/heads/main/img/file_00000000b1f881f7b6298756986111bc.png" alt="LIL SYNN artist portrait" loading="lazy" />
                   <span className="featured-artist-number">01 / FEATURED ARTIST</span>
                 </div>
