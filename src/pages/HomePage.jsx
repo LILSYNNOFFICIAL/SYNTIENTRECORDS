@@ -138,6 +138,12 @@ export default function HomePage() {
                 <div className="artist-video-heading"><div><span>01 / LIL SYNN</span><h3>ECHOES OF US</h3></div><a href="https://www.youtube.com/watch?v=cPlMLCBGZTE&list=OLAK5uy_kb4u2aXV7biMk83i3KNPQXsGPh6zSG7vs" target="_blank" rel="noreferrer">VIEW ON YOUTUBE <ExternalLink size={13} /></a></div>
                 <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=OLAK5uy_kb4u2aXV7biMk83i3KNPQXsGPh6zSG7vs" title="LIL SYNN - Echoes of Us official YouTube album playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
                 <p className="artist-video-caption">The complete 10-track album playlist.</p>
+                <div className="youtube-video-stack lil-synn-release-stack">
+                  <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/QGll3iTjNJA" title="LIL SYNN - I Won't, official release" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                  <div className="youtube-video-meta"><strong>I WON'T</strong><span>OFFICIAL RELEASE · SYNTIENT RECORDS</span></div>
+                  <div className="youtube-frame"><iframe src="https://www.youtube-nocookie.com/embed/PUnX340EGFU" title="LIL SYNN - Where I Belong, official release" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                  <div className="youtube-video-meta"><strong>WHERE I BELONG</strong><span>FROM ECHOES OF US · SYNTIENT RECORDS</span></div>
+                </div>
               </article>
               <article className="artist-video-group">
                 <div className="artist-video-heading"><div><span>02 / ZIGGY AND CHICKENMAN</span><h3>COSMIC RAIN</h3></div><a href="https://youtube.com/channel/UCmeovIW_Qs1pJpLuxIp1gUA?si=vORgaVge8bQHibAV" target="_blank" rel="noreferrer">VIEW CHANNEL <ExternalLink size={13} /></a></div>
