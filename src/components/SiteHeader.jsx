@@ -24,11 +24,15 @@ export default function SiteHeader() {
             <Portal>
               <Menu.Positioner>
                 <Menu.Content className="roster-menu">
-                  {roster.map((artist) => (
+                  {roster.map((artist) => artist.href ? (
                     <Menu.Item key={artist.name} value={artist.name} asChild>
                       <a href={artist.href} target="_blank" rel="noreferrer">
                         <span>{artist.name}</span><span className="menu-arrow">↗</span>
                       </a>
+                    </Menu.Item>
+                  ) : (
+                    <Menu.Item key={artist.name} value={artist.name} disabled>
+                      <span className="roster-pending-item"><span>{artist.name}</span><small>LINK PENDING</small></span>
                     </Menu.Item>
                   ))}
                 </Menu.Content>
@@ -53,10 +57,14 @@ export default function SiteHeader() {
       {mobileOpen && (
         <Box className="mobile-nav">
           <div className="mobile-nav-label">ROSTER</div>
-          {roster.map((artist) => (
+          {roster.map((artist) => artist.href ? (
             <a key={artist.name} href={artist.href} target="_blank" rel="noreferrer" onClick={() => setMobileOpen(false)}>
               {artist.name}<span>↗</span>
             </a>
+          ) : (
+            <div key={artist.name} className="mobile-nav-pending" aria-disabled="true">
+              {artist.name}<span>LINK PENDING</span>
+            </div>
           ))}
           <a href={merchUrl} target="_blank" rel="noreferrer" onClick={() => setMobileOpen(false)}>MERCH<span>↗</span></a>
           <Link as={RouterLink} to="/About" onClick={() => setMobileOpen(false)}>ABOUT</Link>
