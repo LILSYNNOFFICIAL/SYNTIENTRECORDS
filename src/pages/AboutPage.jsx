@@ -113,45 +113,18 @@ function updateMeta(selector, attribute, value, tagName) {
 
 export default function AboutPage() {
   useEffect(() => {
-    const previousTitle = document.title;
-    const description = document.head.querySelector('meta[name="description"]');
-    const previousDescription = description?.getAttribute("content");
-    const ogTitle = document.head.querySelector('meta[property="og:title"]');
-    const previousOgTitle = ogTitle?.getAttribute("content");
-    const ogDescription = document.head.querySelector('meta[property="og:description"]');
-    const previousOgDescription = ogDescription?.getAttribute("content");
-    const canonical = document.head.querySelector('link[rel="canonical"]');
-    const previousCanonical = canonical?.getAttribute("href");
-
-    document.title = "About SYNOVA MEDIA & SYNTIENT RECORDS | Independent Music, Artists & Technology";
-    updateMeta('meta[name="description"]', "content", "Discover the creative ecosystem behind Syntient Records and Synova Media: independent artists, AI-assisted music, original writing, video and visual production, marketing, and custom software built by JP Gainer.", "meta");
+    document.title = "The Creative Ecosystem Behind Syntient Records | Synova Media";
+    updateMeta('meta[name="description"]', "content", "Independent music, original creative direction, artist development, visual production, marketing, and custom technology under one connected creative operation.", "meta");
     updateMeta('meta[property="og:title"]', "content", "The Creative Ecosystem Behind Syntient Records | Synova Media", "meta");
-    updateMeta('meta[property="og:description"]', "content", "Independent music, original creative direction, artist development, visual production, marketing, and custom technology under one connected creative operation.", "meta");
+    updateMeta('meta[property="og:description"]', "content", "Independent artists, original creative direction, music releases, visual storytelling, marketing, and custom-built technology, connected under Synova Media.", "meta");
     updateMeta('link[rel="canonical"]', "href", "https://www.syntientrecords.com/About", "link");
 
-    const schema = document.createElement("script");
-    schema.type = "application/ld+json";
-    schema.textContent = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "SYNTIENT RECORDS",
-      url: "https://www.syntientrecords.com/",
-      description: "An independent music label within the SYNOVA MEDIA creative ecosystem, supporting artists through original creative direction, AI-assisted music workflows, artist marketing, and custom technology.",
-      parentOrganization: {
-        "@type": "Organization",
-        name: "SYNOVA MEDIA",
-        url: "https://synovamedia.com/"
-      }
-    });
-    document.head.appendChild(schema);
-
     return () => {
-      document.title = previousTitle;
-      if (description && previousDescription !== null) description.setAttribute("content", previousDescription);
-      if (ogTitle && previousOgTitle !== null) ogTitle.setAttribute("content", previousOgTitle);
-      if (ogDescription && previousOgDescription !== null) ogDescription.setAttribute("content", previousOgDescription);
-      if (canonical && previousCanonical !== null) canonical.setAttribute("href", previousCanonical);
-      schema.remove();
+      document.title = "Syntient Records | Independent Music, Artists & Creative Technology";
+      updateMeta('meta[name="description"]', "content", "Syntient Records is an independent California record label within Synova Media, supporting distinctive artists through original creative direction, AI-assisted music workflows, visual storytelling, artist marketing, and custom technology.", "meta");
+      updateMeta('meta[property="og:title"]', "content", "Syntient Records | Independent Music, Artists & Creative Technology", "meta");
+      updateMeta('meta[property="og:description"]', "content", "Independent sound. Original creative direction. Artist support, visual storytelling, marketing, and custom technology within the Synova Media ecosystem.", "meta");
+      updateMeta('link[rel="canonical"]', "href", "https://www.syntientrecords.com/", "link");
     };
   }, []);
 
