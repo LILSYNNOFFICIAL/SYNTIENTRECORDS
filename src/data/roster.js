@@ -42,7 +42,7 @@ export const roster = [
     number: "06",
   },
   {
-    name: "THE SYndRIVER DELTAS",
+    name: "THE SYNDRIVER DELTAS",
     descriptor: "New roster project · Official link coming soon",
     description: "A new project joining the SYNTIENT RECORDS roster. Its official destination and additional project details will be added when supplied.",
     href: null,
