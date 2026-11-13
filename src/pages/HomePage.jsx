@@ -3,7 +3,7 @@ import { ArrowDownRight, ArrowUpRight, Disc3, ExternalLink } from "lucide-react"
 import { Link as RouterLink } from "react-router-dom";
 import SiteHeader from "../components/SiteHeader.jsx";
 import SiteFooter from "../components/SiteFooter.jsx";
-import { roster } from "../data/roster.js";
+import { roster, merchUrl } from "../data/roster.js";
 import labelLogo from "../../img/file_000000006b4c71f4bbef4905dea0a57f-removebg-preview.png";
 
 const featuredRelease = {
@@ -196,6 +196,18 @@ export default function HomePage() {
                   <div className="artist-card artist-card-pending-shell" key={artist.name} aria-label={artist.name + ", official link coming soon"}>{card}</div>
                 );
               })}
+              <a className="artist-card merch-card" href={merchUrl} target="_blank" rel="noreferrer" aria-label="Shop official LIL SYNN merchandise">
+                <div className="artist-card-top">
+                  <span>OFFICIAL STORE</span>
+                  <span className="artist-platform">MERCH</span>
+                </div>
+                <div className="artist-card-bottom">
+                  <Heading as="h3">MERCH</Heading>
+                  <Text>Official LIL SYNN merchandise.</Text>
+                  <span className="artist-card-action">SHOP MERCH <ArrowUpRight size={14} /></span>
+                </div>
+                <div className="card-glint" />
+              </a>
             </SimpleGrid>
           </Container>
         </section>
