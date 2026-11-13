@@ -160,6 +160,7 @@
 .featured-artist-card:hover{border-color:rgba(255,255,255,.42);transform:translateY(-4px)}
 .featured-artist-image-wrap{position:relative;overflow:hidden;aspect-ratio:16/10;background:#111}
 .featured-artist-image-wrap img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .55s}
+.featured-artist-image-wrap-lil-synn img{object-position:center top}
 .featured-artist-card:hover .featured-artist-image-wrap img{transform:scale(1.035)}
 .featured-artist-number{position:absolute;left:15px;bottom:14px;padding:8px 10px;background:rgba(0,0,0,.76);border:1px solid rgba(255,255,255,.2);color:#eee;font-size:7px;letter-spacing:.16em;backdrop-filter:blur(12px)}
 .featured-artist-info{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px}
