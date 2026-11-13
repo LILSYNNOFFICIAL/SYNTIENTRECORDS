@@ -168,7 +168,7 @@
 .featured-artist-link{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;color:#ccc;font-size:7px;letter-spacing:.12em}
 .featured-artist-card:hover .featured-artist-link{color:#fff}
 .artist-video-section{border-top:1px solid var(--line)}
-.artist-video-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:26px;align-items:start}
+.artist-video-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:26px;align-items:stretch}
 .artist-video-group{min-width:0;padding:20px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.008)),#090909}
 .artist-video-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}
 .artist-video-heading span{color:#888;font-size:7px;letter-spacing:.16em}
@@ -191,3 +191,4 @@
  .artist-video-heading{align-items:flex-start;flex-direction:column}
  .featured-artist-image-wrap{aspect-ratio:4/3}
 }
+
