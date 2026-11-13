@@ -6,6 +6,10 @@ export default defineConfig({
   build: {
     sourcemap: false,
     rollupOptions: {
+      input: {
+        main: "index.html",
+        about: "about.html",
+      },
       output: {
         manualChunks(id) {
           if (id.includes("/node_modules/@chakra-ui/")) return "chakra";
