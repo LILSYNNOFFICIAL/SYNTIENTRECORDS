@@ -105,3 +105,89 @@
   .mobile-nav-pending{display:flex;justify-content:space-between;align-items:center;padding:12px 4px;color:#777;font-size:11px;letter-spacing:.1em}
   .mobile-nav-pending span{font-size:7px;letter-spacing:.12em}
 }
+
+
+/* Label homepage refinement: featured release, clear artist destinations, and editorial hierarchy. */
+.featured-release-section{position:relative;border-top:1px solid rgba(255,255,255,.055);border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.018),transparent 35%)}
+.featured-release-card{display:grid;grid-template-columns:minmax(280px,.92fr) minmax(0,1.08fr);gap:clamp(30px,6vw,82px);align-items:center;padding:clamp(18px,3vw,34px);border:1px solid rgba(255,255,255,.14);border-radius:14px;background:linear-gradient(125deg,rgba(255,255,255,.055),rgba(255,255,255,.012) 58%),#090909;box-shadow:0 28px 80px rgba(0,0,0,.24)}
+.featured-release-artwork{position:relative;display:block;overflow:hidden;aspect-ratio:1/1;border:1px solid rgba(255,255,255,.14);background:#111;box-shadow:0 18px 55px rgba(0,0,0,.42)}
+.featured-release-artwork img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.featured-release-artwork:hover img{transform:scale(1.035)}
+.artwork-index{position:absolute;left:13px;bottom:13px;padding:8px 10px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.2);color:#ddd;font-size:7px;letter-spacing:.16em;backdrop-filter:blur(12px)}
+.featured-release-copy{min-width:0;padding:8px 0}
+.release-overline{display:flex;align-items:center;gap:9px;color:#c9c9c9;font-size:9px;font-weight:600;letter-spacing:.17em}
+.release-overline svg{color:#888}
+.release-overline span,.release-specs span{width:3px;height:3px;border-radius:50%;background:#777}
+.featured-release-title{font-family:Manrope,sans-serif!important;font-size:clamp(39px,5.5vw,72px)!important;line-height:1!important;font-weight:700!important;letter-spacing:-.065em!important;color:#f5f5f5!important;margin-top:22px}
+.release-specs{display:flex;align-items:center;gap:10px;margin-top:15px;color:#888;font-size:8px;letter-spacing:.16em}
+.featured-release-description{max-width:510px;margin-top:24px;color:#aaa;font-size:13px;line-height:1.9}
+.release-track-preview{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;margin-top:26px;border-top:1px solid rgba(255,255,255,.13)}
+.release-track{display:flex;align-items:center;gap:12px;min-width:0;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.09);color:#ddd;font-size:10px}
+.release-track span:first-child{color:#777;font-size:8px;font-variant-numeric:tabular-nums}
+.release-track-more{color:#888;letter-spacing:.08em}
+.release-platform-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.release-platform-links a{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:0 14px;border:1px solid rgba(255,255,255,.24);color:#eee;font-size:8px;font-weight:600;letter-spacing:.13em;transition:background .2s,border-color .2s,color .2s}
+.release-platform-links a:hover{background:#f2f2f2;border-color:#f2f2f2;color:#080808}
+.artist-card{min-height:225px;padding:23px 24px;border-radius:8px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012) 65%),#0a0a0a;box-shadow:none}
+.artist-card-top{align-items:center;gap:12px}
+.artist-platform{padding:6px 8px;border:1px solid rgba(255,255,255,.13);border-radius:2px;color:#888;font-size:7px;letter-spacing:.13em;white-space:nowrap}
+.artist-card-bottom h3{font-size:clamp(17px,1.8vw,21px)}
+.artist-card-action{display:inline-flex;align-items:center;gap:8px;margin-top:19px;color:#ddd;font-size:8px;font-weight:600;letter-spacing:.14em}
+.artist-card:hover .artist-card-action{color:#fff}
+.artist-card-pending{margin-top:19px}
+.artist-card-pending-shell{border-style:dashed}
+.artist-card-pending-shell:hover{border-color:rgba(255,255,255,.2);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012) 65%),#0a0a0a}
+@media(max-width:760px){
+  .featured-release-card{grid-template-columns:1fr;gap:26px;padding:15px;border-radius:10px}
+  .featured-release-artwork{max-width:520px;width:100%;margin:0 auto}
+  .featured-release-copy{padding:5px 3px 7px}
+  .featured-release-title{font-size:clamp(42px,10vw,64px)!important}
+  .release-track-preview{grid-template-columns:1fr 1fr;gap:0 14px}
+  .artist-card{min-height:190px}
+}
+@media(max-width:420px){
+  .release-platform-links{display:grid;grid-template-columns:1fr}
+  .release-platform-links a{justify-content:space-between}
+  .release-track{font-size:9px}
+  .artist-card{padding:19px}
+}
+
+
+/* Featured artist portraits and official-release video showcase. */
+.featured-artists-section{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.018),transparent 42%)}
+.featured-artist-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.featured-artist-card{display:block;min-width:0;border:1px solid rgba(255,255,255,.14);background:#090909;transition:border-color .25s,transform .25s}
+.featured-artist-card:hover{border-color:rgba(255,255,255,.42);transform:translateY(-4px)}
+.featured-artist-image-wrap{position:relative;overflow:hidden;aspect-ratio:16/10;background:#111}
+.featured-artist-image-wrap img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .55s}
+.featured-artist-card:hover .featured-artist-image-wrap img{transform:scale(1.035)}
+.featured-artist-number{position:absolute;left:15px;bottom:14px;padding:8px 10px;background:rgba(0,0,0,.76);border:1px solid rgba(255,255,255,.2);color:#eee;font-size:7px;letter-spacing:.16em;backdrop-filter:blur(12px)}
+.featured-artist-info{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px}
+.featured-artist-info h3{font-family:Manrope,sans-serif;font-size:clamp(17px,2.2vw,24px);font-weight:650;letter-spacing:-.04em;color:#f2f2f2}
+.featured-artist-info p{margin-top:7px;color:#888;font-size:8px;letter-spacing:.13em}
+.featured-artist-link{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;color:#ccc;font-size:7px;letter-spacing:.12em}
+.featured-artist-card:hover .featured-artist-link{color:#fff}
+.artist-video-section{border-top:1px solid var(--line)}
+.artist-video-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:26px;align-items:start}
+.artist-video-group{min-width:0;padding:20px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.008)),#090909}
+.artist-video-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}
+.artist-video-heading span{color:#888;font-size:7px;letter-spacing:.16em}
+.artist-video-heading h3{margin-top:7px;color:#eee;font-family:Manrope,sans-serif;font-size:19px;font-weight:650;letter-spacing:-.035em}
+.artist-video-heading>a{display:inline-flex;align-items:center;gap:7px;flex-shrink:0;color:#bbb;font-size:7px;letter-spacing:.1em}
+.youtube-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.1)}
+.youtube-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.artist-video-caption{margin-top:12px;color:#888;font-size:9px;letter-spacing:.06em}
+.youtube-video-stack{display:grid;gap:0}
+.youtube-video-meta{display:flex;flex-direction:column;gap:5px;padding:11px 0 17px}
+.youtube-video-meta strong{color:#ddd;font-size:9px;letter-spacing:.1em}
+.youtube-video-meta span{color:#777;font-size:7px;letter-spacing:.12em}
+@media(max-width:760px){
+ .featured-artist-grid,.artist-video-grid{grid-template-columns:1fr}
+ .featured-artist-info{padding:17px;align-items:flex-start;flex-direction:column;gap:13px}
+ .artist-video-group{padding:14px}
+ .artist-video-heading h3{font-size:17px}
+}
+@media(max-width:420px){
+ .artist-video-heading{align-items:flex-start;flex-direction:column}
+ .featured-artist-image-wrap{aspect-ratio:4/3}
+}
