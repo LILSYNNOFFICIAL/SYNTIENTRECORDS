@@ -6,8 +6,8 @@ import { roster } from "../data/roster.js";
 
 const projectDetails = [
   ["LIL SYNN", "A cinematic emotrap and alternative-pop project built around emotionally direct songwriting and atmospheric production."],
-  ["ZIGGY", "A creative project within the Syntient Records roster."],
-  ["CHICKENMAN", "A psychedelic delta blues group bringing its own character and energy to the label."],
+  ["ZIGGY", "Part of the psychedelic delta blues group project shared with Chickenman."],
+  ["CHICKENMAN", "The other half of the psychedelic delta blues group project alongside Ziggy."],
   ["DIAMOND HEX", "A vocal-forward project pairing soaring vocals with sharp, precise rapping."],
   ["CHASING QUIET", "A project centered on lo-fi songs and understated atmosphere."],
   ["SYNSTATIC", "A project drawing on dubstep and mid-tempo influences, with albums that explore its electronic sound."],
