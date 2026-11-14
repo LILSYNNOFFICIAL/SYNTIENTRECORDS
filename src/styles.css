@@ -191,3 +191,68 @@
  .artist-video-heading{align-items:flex-start;flex-direction:column}
  .featured-artist-image-wrap{aspect-ratio:4/3}
 }
+
+
+/* Mastering services page */
+.mastering-main{padding-bottom:30px}
+.mastering-hero{position:relative;padding:110px 0 35px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 78% 42%,rgba(180,190,205,.09),transparent 35%),linear-gradient(180deg,rgba(255,255,255,.025),transparent 75%)}
+.mastering-kicker{display:flex;align-items:center;gap:10px;color:#999;font-size:9px;letter-spacing:.2em}
+.mastering-kicker>span{width:5px;height:5px;border-radius:50%;background:#eee;box-shadow:0 0 12px #fff}
+.mastering-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px;padding:45px 0 65px}
+.mastering-title{font-family:Manrope,sans-serif!important;font-size:clamp(48px,7vw,91px)!important;line-height:.99!important;letter-spacing:-.075em!important;font-weight:600!important;margin-top:20px;color:#f4f4f4!important}
+.mastering-title span,.mastering-section-title span,.mastering-contact-panel h2 span{color:#777}
+.mastering-lede{max-width:610px;margin-top:28px;color:#aaa;font-size:15px;line-height:1.95}
+.mastering-primary-cta{display:inline-flex;align-items:center;gap:12px;margin-top:30px;padding:15px 20px;border:1px solid rgba(255,255,255,.42);color:#f3f3f3;font-size:9px;font-weight:600;letter-spacing:.14em;transition:background .2s,color .2s}
+.mastering-primary-cta:hover{background:#eee;color:#080808}
+.mastering-hero-art{position:relative;display:grid;place-items:center;min-height:370px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:radial-gradient(circle,rgba(255,255,255,.075),transparent 56%),linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.005))}
+.mastering-art-orbit{position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;aspect-ratio:1}
+.orbit-a{width:76%}.orbit-b{width:57%;border-color:rgba(255,255,255,.19)}
+.mastering-art-center{display:flex;flex-direction:column;align-items:center;gap:18px;color:#ddd}
+.mastering-art-center svg{filter:drop-shadow(0 0 20px rgba(255,255,255,.2))}
+.mastering-art-center span,.mastering-art-index{font-size:7px;letter-spacing:.2em;color:#888}
+.mastering-art-index{position:absolute;bottom:18px;left:20px}
+.mastering-proof-row{display:flex;flex-wrap:wrap;gap:12px 30px;padding:20px 0;border-top:1px solid rgba(255,255,255,.1);color:#888;font-size:8px;letter-spacing:.14em}
+.mastering-two-col{display:grid;grid-template-columns:1fr 2.2fr;gap:45px}
+.mastering-section-index{padding-top:7px;color:#777;font-size:8px;letter-spacing:.17em}
+.mastering-intro-section,.mastering-capabilities-section,.mastering-delivery-section,.mastering-pricing-section{padding:95px 0;border-bottom:1px solid var(--line)}
+.mastering-section-title{font-family:Manrope,sans-serif!important;font-size:clamp(30px,4vw,47px)!important;line-height:1.13!important;letter-spacing:-.055em!important;font-weight:600!important;margin:17px 0 25px!important;color:#eee!important}
+.mastering-copy{max-width:790px;color:#999;font-size:13px;line-height:2;margin-top:14px}
+.mastering-process-section{padding:95px 0;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
+.mastering-stage-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:42px}
+.mastering-stage{min-height:245px;padding:22px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.01))}
+.mastering-stage-number{color:#777;font-size:9px;letter-spacing:.16em}
+.mastering-stage h3{margin-top:34px;color:#eee;font-family:Manrope,sans-serif;font-size:13px;font-weight:700;letter-spacing:.07em}
+.mastering-stage p{margin-top:13px;color:#929292;font-size:11px;line-height:1.85}
+.mastering-capability-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:30px}
+.mastering-capability-grid>div{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.025)}
+.mastering-capability-grid svg{width:18px;height:18px;color:#aaa}
+.mastering-capability-grid strong{color:#ddd;font-size:8px;letter-spacing:.15em}
+.mastering-capability-grid span{color:#888;font-size:10px;line-height:1.7}
+.mastering-format-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.mastering-format-tags span{padding:8px 10px;border:1px solid rgba(255,255,255,.13);color:#aaa;font-size:7px;letter-spacing:.13em}
+.mastering-offer-section{padding:85px 0;border-bottom:1px solid var(--line)}
+.mastering-offer-panel{padding:clamp(25px,5vw,55px);border:1px solid rgba(255,255,255,.18);background:radial-gradient(ellipse at 85% 20%,rgba(255,255,255,.09),transparent 38%),linear-gradient(130deg,rgba(255,255,255,.065),rgba(255,255,255,.012))}
+.mastering-offer-grid{display:grid;grid-template-columns:1fr .75fr;align-items:center;gap:35px;margin-top:25px}
+.mastering-discount{font-family:Manrope,sans-serif;font-size:clamp(68px,10vw,120px);font-weight:600;letter-spacing:-.09em;line-height:1}
+.mastering-discount span{margin-left:10px;font-size:20px;letter-spacing:.08em;color:#999}
+.mastering-offer-grid h2{margin-top:15px;font-family:Manrope,sans-serif;font-size:clamp(25px,3vw,37px);line-height:1.16;letter-spacing:-.05em}
+.mastering-offer-grid p{max-width:460px;margin-top:14px;color:#999;font-size:12px;line-height:1.8}
+.mastering-code-card{display:flex;flex-direction:column;align-items:flex-start;padding:25px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3)}
+.mastering-code-card>span,.mastering-code-card small{color:#888;font-size:8px;letter-spacing:.15em}
+.mastering-code-card strong{margin:12px 0;font-family:Manrope,sans-serif;font-size:clamp(34px,5vw,53px);letter-spacing:.04em}
+.mastering-code-card a{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:#eee;font-size:8px;letter-spacing:.14em}
+.mastering-terms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:30px}
+.mastering-terms-grid article{padding:20px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.025)}
+.mastering-terms-grid article>span{color:#888;font-size:7px;letter-spacing:.16em}
+.mastering-terms-grid article strong{display:block;margin-top:12px;color:#eee;font-family:Manrope,sans-serif;font-size:19px;font-weight:600;letter-spacing:-.03em}
+.mastering-terms-grid article p{margin-top:9px;color:#929292;font-size:10px;line-height:1.8}
+.mastering-terms-note{margin-top:17px;color:#777;font-size:9px;line-height:1.8}
+.mastering-contact-section{padding:95px 0 115px}
+.mastering-contact-panel{position:relative;overflow:hidden;padding:clamp(30px,6vw,75px);border:1px solid rgba(255,255,255,.16);background:radial-gradient(ellipse at 90% 10%,rgba(255,255,255,.09),transparent 42%),#090909}
+.mastering-contact-panel h2{margin-top:20px;font-family:Manrope,sans-serif;font-size:clamp(37px,5.5vw,67px);line-height:1.08;letter-spacing:-.06em;font-weight:600}
+.mastering-contact-panel>p{max-width:620px;margin-top:22px;color:#999;font-size:13px;line-height:1.9}
+.mastering-email-address{margin-top:25px;color:#ddd;font-size:11px;letter-spacing:.13em}
+.mastering-contact-panel small{display:block;margin-top:9px;color:#777;font-size:8px;letter-spacing:.1em}
+@media(max-width:900px){.mastering-stage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.mastering-hero{padding-top:80px}.mastering-hero-grid{grid-template-columns:1fr;gap:35px;padding:38px 0}.mastering-hero-art{min-height:270px}.mastering-two-col{grid-template-columns:1fr;gap:20px}.mastering-intro-section,.mastering-capabilities-section,.mastering-delivery-section,.mastering-pricing-section,.mastering-process-section{padding:65px 0}.mastering-stage-grid{grid-template-columns:1fr 1fr}.mastering-offer-grid{grid-template-columns:1fr}.mastering-contact-section{padding:65px 0 80px}}
+@media(max-width:460px){.mastering-stage-grid,.mastering-capability-grid,.mastering-terms-grid{grid-template-columns:1fr}.mastering-stage{min-height:0}.mastering-stage h3{margin-top:20px}.mastering-proof-row{flex-direction:column;gap:9px}.mastering-title{font-size:47px!important}}
