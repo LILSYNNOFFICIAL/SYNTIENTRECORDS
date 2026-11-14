@@ -15,6 +15,7 @@ export default function SiteHeader() {
         </Link>
 
         <Flex className="desktop-nav" align="center" gap={2}>
+          <Link href="/masteringservices.html" className="nav-link">Mastering Services</Link>
           <Menu.Root>
             <Menu.Trigger asChild>
               <Button className="nav-link roster-trigger" variant="ghost">
@@ -56,6 +57,7 @@ export default function SiteHeader() {
 
       {mobileOpen && (
         <Box className="mobile-nav">
+          <a href="/masteringservices.html" onClick={() => setMobileOpen(false)}>MASTERING SERVICES</a>
           <div className="mobile-nav-label">ROSTER</div>
           {roster.map((artist) => artist.href ? (
             <a key={artist.name} href={artist.href} target="_blank" rel="noreferrer" onClick={() => setMobileOpen(false)}>
