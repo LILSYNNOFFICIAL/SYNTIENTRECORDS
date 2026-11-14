@@ -76,7 +76,7 @@ export default function MasteringServicesPage() {
                   <div><SlidersHorizontal /><strong>TONAL CONTROL</strong><span>Corrective and musical EQ, spectral balance, resonant control, and tonal shaping.</span></div>
                   <div><Activity /><strong>DYNAMIC INTEGRITY</strong><span>Compression, limiting, transient management, crest factor, and controlled loudness.</span></div>
                   <div><AudioWaveform /><strong>STEREO + PHASE</strong><span>Stereo image, mono compatibility, phase coherence, and low-frequency stability.</span></div>
-                  <div><Disc3 /><strong>RELEASE FORMATS</strong><span>Lossless WAV and AIFF delivery, with project-specific sample-rate and bit-depth requirements.</span></div>
+                  <div><Disc3 /><strong>RELEASE FORMATS</strong><span>Lossless WAV, AIFF, and FLAC delivery, plus M4A exports encoded to the agreed AAC or Apple Lossless (ALAC) specification, with project-specific sample-rate and bit-depth requirements.</span></div>
                 </div>
               </div>
             </div>
@@ -90,10 +90,10 @@ export default function MasteringServicesPage() {
               <div>
                 <div className="eyebrow">BUILT FOR THE RELEASE</div>
                 <Heading as="h2" className="mastering-section-title">Clean, compatible,<br /><span>high-resolution masters.</span></Heading>
-                <Text className="mastering-copy">Final delivery is prepared to the agreed technical specification. Lossless PCM exports preserve the full resolution of the approved master without the data reduction associated with lossy formats. WAV and AIFF deliverables can be prepared with the requested sample rate, bit depth, stereo or mono configuration, and file-naming conventions.</Text>
+                <Text className="mastering-copy">Final delivery is prepared to the agreed technical specification. Lossless PCM exports preserve the full resolution of the approved master without the data reduction associated with lossy formats. WAV, AIFF, and FLAC deliverables can be prepared as lossless PCM audio with the requested sample rate, bit depth, stereo or mono configuration, and file-naming conventions. M4A versions are also available, with AAC used for efficient lossy distribution or ALAC when a lossless Apple-compatible file is required.</Text>
                 <Text className="mastering-copy">Where relevant, delivery planning considers sample-peak and true-peak behaviour, loudness targets, inter-sample peaks, codec-encoding headroom, and the destination platform's technical guidance. Streaming loudness is approached with care: loudness normalization is not a reason to sacrifice punch, dynamics, or musicality.</Text>
                 <Text className="mastering-copy">For multi-track projects, sequencing and album cohesion matter just as much as the individual masters. Relative level, tonal consistency, perceived loudness, transitions, fades, spacing, and the overall listening arc are reviewed as a complete body of work.</Text>
-                <div className="mastering-format-tags"><span>LOSSLESS WAV</span><span>AIFF</span><span>PCM AUDIO</span><span>TRUE-PEAK AWARE</span><span>ALBUM COHESION</span><span>STREAMING-READY</span></div>
+                <div className="mastering-format-tags"><span>LOSSLESS WAV</span><span>AIFF</span><span>FLAC</span><span>M4A (AAC / ALAC)</span><span>PCM AUDIO</span><span>TRUE-PEAK AWARE</span><span>ALBUM COHESION</span><span>STREAMING-READY</span></div>
               </div>
             </div>
           </Container>
