@@ -23,7 +23,7 @@ export default function MasteringServicesPage() {
                 <div className="eyebrow">MASTERING SERVICES</div>
                 <Heading as="h1" className="mastering-title">THE FINAL<br /><span>SONIC STATEMENT.</span></Heading>
                 <Text className="mastering-lede">Your music deserves more than a final export. It deserves a considered, technically disciplined mastering process that brings the record into focus, preserves its character, and prepares it to meet the world at its best.</Text>
-                <a className="mastering-primary-cta" href="mailto:SYNOVAMEDIA@GMAIL.COM?subject=MASTERING%20SERVICES%20INQUIRY">INQUIRE ABOUT MASTERING <ArrowUpRight size={16} /></a>
+                <a className="mastering-primary-cta" href="mailto:contact@lilsynn.com?subject=MASTERING%20SERVICES%20INQUIRY">INQUIRE ABOUT MASTERING <ArrowUpRight size={16} /></a>
               </div>
               <div className="mastering-hero-art" aria-label="Audio mastering signal visualization">
                 <div className="mastering-art-orbit orbit-a" /><div className="mastering-art-orbit orbit-b" />
@@ -105,7 +105,7 @@ export default function MasteringServicesPage() {
               <div className="eyebrow">INTRODUCTORY ALBUM + EP OFFER</div>
               <div className="mastering-offer-grid">
                 <div><div className="mastering-discount">40<span>% OFF</span></div><Heading as="h2">Give the full project<br />the finishing touch.</Heading><Text>Receive a special 40% discount on album and EP mastering projects through February 14, 2027.</Text></div>
-                <div className="mastering-code-card"><span>PROMO CODE</span><strong>#LOVER</strong><small>VALID THROUGH FEBRUARY 14, 2027</small><a href="mailto:SYNOVAMEDIA@GMAIL.COM?subject=MASTERING%20SERVICES%20INQUIRY&body=I%27d%20like%20to%20inquire%20about%20the%20%2340%25%20album%2FEP%20mastering%20promotion.%20Promo%20code%3A%20%23LOVER.">CLAIM THE OFFER <ArrowUpRight size={15} /></a></div>
+                <div className="mastering-code-card"><span>PROMO CODE</span><strong>#LOVER</strong><small>VALID THROUGH FEBRUARY 14, 2027</small><a href="mailto:contact@lilsynn.com?subject=MASTERING%20SERVICES%20INQUIRY&body=I%27d%20like%20to%20inquire%20about%20the%20%2340%25%20album%2FEP%20mastering%20promotion.%20Promo%20code%3A%20%23LOVER.">CLAIM THE OFFER <ArrowUpRight size={15} /></a></div>
               </div>
             </div>
           </Container>
@@ -136,8 +136,8 @@ export default function MasteringServicesPage() {
               <div className="eyebrow">LET'S HEAR WHAT YOU'RE WORKING ON</div>
               <Heading as="h2">Your mix. Your vision.<br /><span>Finished with intention.</span></Heading>
               <Text>Send an inquiry with a brief description of your project, the number of tracks, your intended release format, and any reference material or technical requirements. You'll receive a response to discuss the project and establish a quote.</Text>
-              <a className="mastering-primary-cta" href="mailto:SYNOVAMEDIA@GMAIL.COM?subject=MASTERING%20SERVICES%20INQUIRY"><Mail size={16} /> EMAIL YOUR INQUIRY <ArrowUpRight size={16} /></a>
-              <div className="mastering-email-address">SYNOVAMEDIA@GMAIL.COM</div>
+              <a className="mastering-primary-cta" href="mailto:contact@lilsynn.com?subject=MASTERING%20SERVICES%20INQUIRY"><Mail size={16} /> EMAIL YOUR INQUIRY <ArrowUpRight size={16} /></a>
+              <div className="mastering-email-address">contact@lilsynn.com</div>
               <small>PLEASE USE THE SUBJECT LINE: MASTERING SERVICES INQUIRY</small>
             </div>
           </Container>
